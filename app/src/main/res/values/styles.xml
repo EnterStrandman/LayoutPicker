@@ -1,0 +1,11 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:colorControlNormal">#000000</item>
+        <item name="android:colorControlActivated">#A8FF3D00</item>
+        <item name="android:colorControlHighlight">#A8FF3D00</item>
+    </style>
+
+
+</resources>

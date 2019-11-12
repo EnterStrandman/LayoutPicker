@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="layoutpicker.layoutpicker.layoutpicker.MainActivity"
+    android:textColor="#000000"
+    android:textStyle="bold"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <Button
+            android:id="@+id/flyers_logo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="90dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/fairmontflyerslogo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="272dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginHorizontal="15dp"
+            android:layout_marginTop="50dp">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_course_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Course Information"
+                    android:onClick="courseInformation"/>
+
+                <Button
+                    android:id="@+id/btn_course_picker"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="coursePicker"
+                    android:text="Course Picker" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/btn_scorecard"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="openScorecard"
+                    android:text="Scorecard [BETA]" />
+
+                <Button
+                    android:id="@+id/btn_upcoming_events"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:onClick="upcomingEvents"
+                    android:text="Upcoming Events" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/instagram"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/discgolfscene"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Button" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
