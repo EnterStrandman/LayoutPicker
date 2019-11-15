@@ -17,6 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name="layoutpicker.layoutpicker.layoutpicker.CoursePicker"/>
+        <activity android:name="layoutpicker.layoutpicker.layoutpicker.CourseInformation"/>
     </application>
 
 </manifest>

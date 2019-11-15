@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:screenOrientation="portrait"
     tools:context="layoutpicker.layoutpicker.layoutpicker.MainActivity"
     android:textColor="#000000"
     android:textStyle="bold"
@@ -26,7 +27,7 @@
 
         <TableLayout
             android:layout_width="match_parent"
-            android:layout_height="272dp"
+            android:layout_height="500dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginHorizontal="15dp"
             android:layout_marginTop="50dp">
@@ -41,12 +42,12 @@
                     android:id="@+id/btn_course_info"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:text="Course Information"
-                    android:onClick="courseInformation"/>
+                    android:onClick="courseInformation"
+                    android:text="Course Information" />
 
                 <Button
                     android:id="@+id/btn_course_picker"
-                    android:layout_width="match_parent"
+                    android:layout_width="170dp"
                     android:layout_height="match_parent"
                     android:onClick="coursePicker"
                     android:text="Course Picker" />
@@ -76,35 +77,48 @@
 
             <TableRow
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <Button
-                    android:id="@+id/facebook"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/twitter"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/instagram"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Button" />
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
 
                 <Button
                     android:id="@+id/discgolfscene"
-                    android:layout_width="match_parent"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:background="@drawable/dgscene_logo_nav"
+                    android:onClick="linkButton"
+                    android:tag="https://www.discgolfscene.com/clubs/Fairmont_Flyers_Disc_Golf_Club"/>
+
+                <Button
+                    android:id="@+id/facebook"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/iconfinder_facebook_circle_color_107175"
+                    android:onClick="linkButton"
+                    android:tag="https://www.facebook.com/sethburtondiscgolf/" />
+
+                <Button
+                    android:id="@+id/twitter"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/iconfinder_twitter_circle_294709"
+                    android:onClick="linkButton"
+                    android:tag="https://twitter.com/SethBurtonMemDG?lang=en"/>
+
+                <Button
+                    android:id="@+id/instagram"
+                    android:layout_width="0dp"
+                    android:layout_height="107dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/iconfinder_instagram_1107220"
+                    android:onClick="linkButton"
+                    android:tag="https://www.instagram.com/fairmontflyersdiscgolf/" />
+
+
+
             </TableRow>
 
         </TableLayout>

@@ -1,5 +1,6 @@
 package layoutpicker.layoutpicker.layoutpicker;
 
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -32,7 +33,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void courseInformation(View view)
     {
-
+        Intent intent = new Intent(this, CourseInformation.class);
+        startActivity(intent);
     }
 
     public void coursePicker(View view)
@@ -49,5 +51,11 @@ public class MainActivity extends AppCompatActivity {
     public void upcomingEvents(View view)
     {
 
+    }
+
+    public void linkButton(View view)
+    {
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(view.getTag().toString()));
+        startActivity(intent);
     }
 }
