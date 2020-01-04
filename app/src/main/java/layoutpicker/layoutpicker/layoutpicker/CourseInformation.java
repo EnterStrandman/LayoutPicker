@@ -10,10 +10,8 @@ import com.layoutpicker.layoutpicker.R;
 
 public class CourseInformation extends AppCompatActivity {
     //forward declare UI elements
-    Button sethBurtonMemorialLogo;
-    TextView locationText;
-    TextView SBMdescription;
-    TextView OCdescription;
+    TextView pageHeader;
+    Button SBMmap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -22,9 +20,7 @@ public class CourseInformation extends AppCompatActivity {
         setContentView(R.layout.course_information);
 
         //init UI components
-        sethBurtonMemorialLogo = findViewById(R.id.SBMlogo);
-        locationText = findViewById(R.id.locationText);
-        SBMdescription = findViewById(R.id.SBMdescription);
-        OCdescription = findViewById(R.id.OCdescription);
+        pageHeader = findViewById(R.id.pageHeader);
+        SBMmap = findViewById(R.id.SBMmap);
     }
 }
