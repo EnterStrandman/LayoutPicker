@@ -43,6 +43,7 @@
                     android:id="@+id/btn_course_info"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="courseInformation"
                     android:text="Seth Burton\nCourse Map" />
 
@@ -50,6 +51,7 @@
                     android:id="@+id/btn_course_picker"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="coursePicker"
                     android:text="Course\nPicker" />
             </TableRow>
@@ -64,6 +66,7 @@
                     android:id="@+id/btn_scorecard"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="openScorecard"
                     android:text="Scorecard" />
 
@@ -71,6 +74,7 @@
                     android:id="@+id/btn_upcoming_events"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="upcomingEvents"
                     android:text="Upcoming Events" />
 
@@ -86,6 +90,7 @@
                     android:id="@+id/btn_get_directions"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="directionsMap"
                     android:text="Get Directions" />
 
@@ -93,6 +98,7 @@
                     android:id="@+id/btn_contact_devs"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:onClick="contactDevs"
                     android:text="Contact the Devs" />
             </TableRow>

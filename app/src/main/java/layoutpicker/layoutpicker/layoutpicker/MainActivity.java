@@ -16,11 +16,11 @@ import com.layoutpicker.layoutpicker.R;
 
 public class MainActivity extends AppCompatActivity {
     //forward declare UI elements
-    private Button course_information;
+    private Button course_map;
     private Button course_picker;
     private Button scorecard;
     private Button upcoming_events;
-    private Button course_map;
+    private Button get_directions;
     private Button contact_dev;
 
     @Override
@@ -30,11 +30,11 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //init UI components
-        course_information = findViewById(R.id.btn_course_info);
+        course_map = findViewById(R.id.btn_get_directions);
         course_picker = findViewById(R.id.btn_course_picker);
         scorecard = findViewById(R.id.btn_scorecard);
         upcoming_events = findViewById(R.id.btn_upcoming_events);
-        course_map = findViewById(R.id.btn_get_directions);
+        get_directions = findViewById(R.id.btn_get_directions);
         contact_dev = findViewById(R.id.btn_contact_devs);
 
     }
@@ -53,12 +53,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void openScorecard(View view)
     {
-
+        Intent intent = new Intent(this, ScoreCard.class);
+        startActivity(intent);
     }
 
     public void upcomingEvents(View view)
     {
-
+        Intent intent = new Intent(this, UpcomingEvents.class);
+        startActivity(intent);
     }
 
     public void linkButton(View view)

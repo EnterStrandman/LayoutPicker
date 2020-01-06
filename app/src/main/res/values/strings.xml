@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Layout Picker</string>
+    <string name="set_calendar_nreminder">Set Calendar Reminder</string>
+    <string name="upcoming_events">Upcoming Events</string>
+    <string name="event_details">Event Details</string>
+    <string name="feb_n22">Feb 22</string>
+    <string name="ice_bowl_amp_chili_cook_off"><![CDATA[Ice Bowl & Chili Cook Off]]></string>
 </resources>
