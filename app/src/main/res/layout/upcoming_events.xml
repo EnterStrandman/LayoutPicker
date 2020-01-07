@@ -17,7 +17,7 @@
         tools:layout_editor_absoluteY="1dp">
 
         <TextView
-            android:id="@+id/upcomingEventsHeader"
+            android:id="@+id/upcoming_events_header"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
@@ -33,7 +33,7 @@
             android:orientation="horizontal">
 
             <TextView
-                android:id="@+id/directions_"
+                android:id="@+id/set_calendar_reminder"
                 android:layout_width="10dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -42,7 +42,7 @@
                 android:textSize="18sp" />
 
             <TextView
-                android:id="@+id/directions_event_info"
+                android:id="@+id/event_details"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:layout_marginTop="12dp"
@@ -58,7 +58,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/date_feb22_button4"
+                android:id="@+id/date_feb22_button"
                 android:layout_width="35dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -67,10 +67,13 @@
                 android:text="feb\n22"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="setCalendarReminder"
+                android:tag="Ice Bowl &amp; Chili Cook Off~1582376400000~32400000~FREQ=ONCE"/>
+                <!-- title~begin time(ms)~duration(ms)~repeat rule -->
 
             <Button
-                android:id="@+id/ice_bowl_link2"
+                android:id="@+id/ice_bowl_link"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -78,7 +81,9 @@
                 android:text="Ice Bowl &amp;\nChili Cook Off"
                 android:textAlignment="center"
                 android:textColor="@android:color/holo_blue_bright"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="linkButton"
+                android:tag="https://www.discgolfscene.com/tournaments/16th_Annual_Fairmont_Ice_Bowl_and_Chili_Cook_Off_2020"/>
         </LinearLayout>
 
         <Space
@@ -100,7 +105,10 @@
                 android:text="may\n9"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="setCalendarReminder"
+                android:tag="Mellow Day in May~1589025600000~32400000~FREQ=ONCE"/>
+                <!-- title~begin time(ms)~duration(ms)~repeat rule -->
 
             <Button
                 android:id="@+id/mellow_day_in_may"
@@ -111,7 +119,9 @@
                 android:text="Mellow Day\nin May"
                 android:textAlignment="center"
                 android:textColor="@android:color/holo_blue_dark"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="linkButton"
+                android:tag="https://www.discgolfscene.com/tournaments/Mellow_Day_in_May_plus_WGE_2020"/>
         </LinearLayout>
 
         <Space
@@ -133,7 +143,10 @@
                 android:text="sept\n19-20"
                 android:textAlignment="center"
                 android:textColor="@android:color/black"
-                android:textSize="24sp" />
+                android:textSize="24sp"
+                android:onClick="setCalendarReminder"
+                android:tag="Seth Burton Memorial~1600516800000~32400000~FREQ=DAILY;INTERVAL=1;UNTIL=20200920T040000Z"/>
+                <!-- title~begin time(ms)~duration(ms)~repeat rule -->
             <Button
                 android:id="@+id/seth_burton_memorial"
                 android:layout_width="wrap_content"
@@ -143,7 +156,10 @@
                 android:text="Seth Burton\nMemorial"
                 android:textAlignment="center"
                 android:textColor="@android:color/holo_orange_light"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:onClick="linkButton"
+                android:tag="https://www.discgolfscene.com/tournaments/Seth_Burton_Memorial_2020"/>
+
         </LinearLayout>
 
     </LinearLayout>

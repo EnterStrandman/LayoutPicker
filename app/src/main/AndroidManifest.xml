@@ -21,5 +21,4 @@
         <activity android:name="layoutpicker.layoutpicker.layoutpicker.UpcomingEvents"/>
         <activity android:name="layoutpicker.layoutpicker.layoutpicker.ScoreCard"/>
     </application>
-
 </manifest>
