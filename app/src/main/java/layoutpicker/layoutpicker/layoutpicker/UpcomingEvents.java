@@ -10,21 +10,12 @@ import android.widget.Button;
 import com.layoutpicker.layoutpicker.R;
 
 public class UpcomingEvents extends AppCompatActivity {
-    //forward declare UI elements
-    Button date_feb22_button;
-    Button date_may9;
-    Button date_sept19_20;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.upcoming_events);
-
-        //init UI components
-        date_feb22_button = findViewById(R.id.date_feb22_button);
-        date_may9 = findViewById(R.id.date_may9);
-        date_sept19_20 = findViewById(R.id.date_sept19_20);
     }
 
     //pass a url in from the button on the xml layout
