@@ -44,10 +44,6 @@ public class UpcomingEvents extends AppCompatActivity {
 
         components = parameters.split(delimiter);
 
-        System.out.println("Components[1], beginTime: " + components[1]);
-        System.out.println("Components[1] + components[2], endTime: " + components[1] + components[2]);
-        System.out.println("Components[3], rrule: " + components[1]);
-
         Intent intent = new Intent(Intent.ACTION_EDIT);
         intent.setType("vnd.android.cursor.item/event");
         intent.putExtra("title",  components[0]);
